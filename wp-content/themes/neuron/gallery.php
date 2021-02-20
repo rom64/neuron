@@ -10,11 +10,9 @@ Template Name: gallery
      <div class="overlay"></div>
      <div class="container">
           <div class="row">
-
                <div class="col-md-12 col-sm-12">
                     <h1>Image Gallery</h1>
                </div>
-
           </div>
      </div>
 </section>
@@ -24,7 +22,6 @@ Template Name: gallery
 <section id="gallery">
      <div class="container">
           <div class="row">
-
                <div class="col-md-offset-1 col-md-10 col-sm-12">
                     <h2><?php the_field('gallery-title');?></h2>
                    <?php the_field('gallery-text');?>
@@ -38,12 +35,10 @@ Template Name: gallery
                          </div>
                     </div>
                     <?php endfor;?>
-
                     <div class="col-md-12 col-sm-12">
                          <p><?php the_field('after-gallery');?></p>
                     </div>
                </div>
-
           </div>
      </div>
 </section>

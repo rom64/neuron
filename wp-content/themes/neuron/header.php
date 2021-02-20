@@ -32,21 +32,16 @@
                </button>
                <a href="<?php bloginfo('url');?>" class="navbar-brand"><div><?php bloginfo('name');?></div></a>
           </div>
-                    <?php
-                         $args = [ 'theme_location' => 'top',
-                                   'echo' => 0,
-                                   'menu_class' => 'nav navbar-nav navbar-right collapse navbar-collapse'
-                         ];
-                         $menu = wp_nav_menu( $args );
-                         if(!is_front_page())
-                         $menu = preg_replace('~<li~', '<li><a href="'.home_url().'" title="На главную">Home</a></li><li', $menu, 1 );
-                         echo $menu; 
-                    ?>
-              <!--    <?php wp_nav_menu([
-                    'theme_location' =>'top',
-                    'menu_class' => 'nav navbar-nav navbar-right collapse navbar-collapse'
-                  
-               ]);?> -->
+          <?php
+               $args = [ 'theme_location' => 'top',
+                         'echo' => 0,
+                         'menu_class' => 'nav navbar-nav navbar-right collapse navbar-collapse'
+               ];
+               $menu = wp_nav_menu( $args );
+               if(!is_front_page())
+               $menu = preg_replace('~<li~', '<li><a href="'.home_url().'" title="На главную">Home</a></li><li', $menu, 1 );
+               echo $menu; 
+          ?>
 
      </div>
 </div>

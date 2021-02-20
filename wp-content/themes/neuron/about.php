@@ -10,11 +10,9 @@ Template Name: about
      <div class="overlay"></div>
      <div class="container">
           <div class="row">
-
                <div class="col-md-12 col-sm-12">
                     <h1><?php the_title();?></h1>
                </div>
-
           </div>
      </div>
 </section>
@@ -24,7 +22,6 @@ Template Name: about
 <section id="about">
      <div class="container">
           <div class="row">
-
                <div class="col-md-offset-1 col-md-10 col-sm-12">
                     <div class="col-md-4 col-sm-4">
                          <h2><?php the_field('top-left-title');?></h2>
@@ -73,7 +70,6 @@ Template Name: about
                     <h3><?php the_field('section-bottom-title');?></h3>
                     <?php the_field('section-bottom-text');?>
                </div>
-
           </div>
      </div>
 </section>

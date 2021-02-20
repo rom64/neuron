@@ -26,7 +26,6 @@ Template Name: page
 <section id="blog">
      <div class="container">
           <div class="row">
-
                <div class="col-md-offset-1 col-md-10 col-sm-12">
                     <div class="blog-post-thumb">
                     <?php while(have_posts()){
@@ -55,10 +54,7 @@ Template Name: page
                     }?>
                              
                     </div>
-
-                
                </div>
-
           </div>
      </div>
 </section>
